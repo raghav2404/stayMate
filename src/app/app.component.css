@@ -1,0 +1,21 @@
+.content {
+  min-height: calc(100vh - 64px);
+  /* Add space to prevent content from being hidden by footer */ /* Adjust if toolbar height changes */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+
+}
+
+.spacer {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

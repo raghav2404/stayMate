@@ -1,0 +1,42 @@
+
+<h1>Welcome to {{hotelName}}</h1>
+
+<!--<div *ngIf="hiderooms">
+
+  <div [ngStyle]="{'color':rooms.availableRooms > 0  ? 'steelblue' : 'red'}" [innerText]="noOfRooms"></div>
+
+</div>
+
+<div *ngIf="selectedRoom">
+  {{selectedRoom | json}}
+  </div>
+-->
+<!--<div>
+  <button (click)="addRoom()">Add Room</button>
+</div>
+!-->
+<div *ngIf="rooms.availableRooms > 0">
+
+<app-rooms-list [rooms]="roomList" [title]="title" (selectedRoom)="selectRoom($event) "></app-rooms-list>
+</div>
+
+
+<!--<button (click)="toggle()">Toggle</button> -->
+
+<button mat-raised-button  (click)="editRoom()"  color="primary">Update</button>
+<br>
+<br>
+<button mat-raised-button  (click)="deleteRoom()" color = "primary">Delete</button>
+
+<!--<h1>
+  {{totalBytes}} loaded
+</h1> -->
+
+<!--<ul [ngSwitch]="getPriceCategory()">
+  <li *ngSwitchCase="'cheap'">Cheap</li>
+  <li *ngSwitchCase="'average'">Average</li>
+  <li *ngSwitchCase="'EXPENSIVE'">Average</li>
+  <li *ngSwitchDefault></li>
+
+</ul>-->
+<router-outlet></router-outlet>
