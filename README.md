@@ -28,3 +28,25 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 https://staycalmm2404.netlify.app/rooms
+
+The solution consists of following modules:
+Navbar (menu)
+Footer
+Rooms (Landing page which shows rooms avaiable, ameneties , price , other pages and option to book them)
+Add Rooms 
+Bookings( Has a form to book room with guest details)
+User(guest .admin login)
+
+Angular Concepts learned in the POC:
+
+Components
+Services
+Guards
+Routing
+Directives
+DI
+Data binding
+Modules
+Material
+Pipe
+
